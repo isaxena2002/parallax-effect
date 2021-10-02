@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parallax</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pmain.css">
+    </head>
+    <body>
+     
+        <div class="container">
+            <div class="background">
+              <h1>Parallax Effect</h1>
+              <div class="layer layer-1"></div>
+              <div class="layer layer-2"></div>
+              <div class="layer layer-3"></div>
+            </div>
+            <div class="content">
+              <div class="text">
+                      <p>In hac habitasse platea dictumst. Vivamus nec est et augue blandit aliquam quis non magna. Nunc velit nisi, porta ac libero in, porttitor placerat purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ut posuere quam. Aenean in leo mattis, convallis dolor vel, tempor lectus.</p>
+                      <p>Elit nulla vulputate ex, sed porta est risus ac lorem. Duis sed blandit felis. In hac habitasse platea dictumst. Vivamus nec est et augue blandit aliquam quis non magna. Nunc velit nisi, porta ac libero in, porttitor placerat purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ut posuere quam. Aenean in leo mattis, convallis dolor vel, tempor lectus.</p>
+                      <p>Duis sed blandit felis. Integer dictum, mi eget tristique semper, elit nulla vulputate ex, sed porta est risus ac lorem. In hac habitasse platea dictumst. Vivamus nec est et augue blandit aliquam quis non magna. Vestibulum ante ipsum primis.</p>
+                  <p>Integer dictum, mi eget tristique semper, elit nulla vulputate ex, sed porta est risus ac lorem. Duis sed blandit felis. In hac habitasse platea dictumst. Vivamus nec est et augue blandit aliquam quis non magna. Nunc velit nisi, porta ac libero in, porttitor placerat purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ut posuere quam. Aenean in leo mattis, convallis dolor vel, tempor lectus.</p>
+            </div>
+                <img class="rock-1 rocks" src="https://i.imgur.com/yIbmDYw.png" alt="rock"/>
+                <img class="rock-2 rocks" src="https://i.imgur.com/MZutMpv.png" alt="rock"/>
+                <img class="rock-3 rocks" src="https://i.imgur.com/AZumOFI.png" alt="rock"/>
+                 <img class="rock-4 rocks" src="https://i.imgur.com/yIbmDYw.png" alt="rock"/>
+                 <img class="rock-5 rocks" src="https://i.imgur.com/MZutMpv.png" alt="rock"/>
+                 <img class="rock-6 rocks" src="https://i.imgur.com/MZutMpv.png" alt="rock"/>
+                 <img class="rock-7 rocks" src="https://i.imgur.com/AZumOFI.png" alt="rock"/>
+                  <img class="rock-8 rocks" src="https://i.imgur.com/yIbmDYw.png" alt="rock"/>
+                  <img class="rock-9 rocks" src="https://i.imgur.com/yIbmDYw.png" alt="rock"/>
+                <div class="rock"></div>
+             </div>
+            
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="parallax" style=" background-image: url('https://images.hdqwalls.com/download/blue-green-material-design-abstract-8k-hc-1366x768.jpg');">
+                            
+         
+        <!-- </div>
+
+        <div class="paratxt1" >
+        Hi!!<br>
+        Welcome to the Parallax website.<br>
+        (:Scroll up and down and I'm sure you'll love the effect:)
+        </div>
+
+        <div class="parallax" style=" background-image: url('https://www.teahub.io/photos/full/29-295634_modern-material-design-hd-wallpaper-for-free-modern.png');"></div>
+
+
+
+        <div class="paratxt1">
+        You are almost at the end of the Website!<br>
+        Thanks for visiting ^o^
+        </div>
+
+        <div class="parallax" style=" background-image: url('https://www.teahub.io/photos/full/6-61455_my-material-4k-hd-desktop-wallpaper-for.jpg');"></div>
+         -->
+
+
+
+        <script src="" async defer>
+            $(window).bind('scroll',function(e){
+    parallaxScroll();
+});
+
+function parallaxScroll(){
+   var scrolled = $(window).scrollTop(); 
+   $('.layer-1').css('top',(0-(scrolled*.25))+'px');
+   $('.layer-2').css('top',(0-(scrolled*.5))+'px');
+   $('.layer-3').css('top',(0-(scrolled*.75))+'px');
+   $('.rock-1').css('top',(400-(scrolled*.8))+'px');
+   $('.rock-2').css('top',(200-(scrolled*.6))+'px');
+   $('.rock-3').css('top',(500-(scrolled*.4))+'px'); 
+   $('.rock-4').css('top',(600-(scrolled*.5))+'px'); 
+   $('.rock-5').css('top',(600-(scrolled*.7))+'px'); 
+   $('.rock-6').css('top',(400-(scrolled*.7))+'px'); 
+   $('.rock-7').css('top',(600-(scrolled*.5))+'px'); 
+   $('.rock-8').css('top',(200-(scrolled*.2))+'px');
+   $('.rock-9').css('top',(200-(scrolled*.4))+'px');
+}
+
+        </script>
+    </body>
+</html>

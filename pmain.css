@@ -1,0 +1,215 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+      margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background: #030303;
+    color: white;
+  }
+  .background {
+    background-image: linear-gradient(to bottom,transparent 40%,rgba(0,0,0,0.95) 70%, #020202), url("https://i.imgur.com/9KVO1Ok.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: top;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 50px 50px black;
+  }
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 100;
+    font-family: 'Gruppo', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 5px;
+  }
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .layer-1 {
+    background-image: linear-gradient(to bottom,transparent 50%,rgba(0, 0, 0,0.85) 70%, #020202), url("https://i.imgur.com/bwEm8WB.png");
+    z-index: 70;
+  }
+  .layer-2 {
+    background-image: linear-gradient(to bottom,transparent 30%,rgba(0,0,0,0.9) 80%, #020202), url("https://i.imgur.com/XxTPjmC.png");
+    z-index: 80;
+  }
+  .layer-3 {
+    background-image: 
+      linear-gradient(to bottom,transparent 60%,rgba(0, 0,0,0.85), #020202), url("https://i.imgur.com/F4xnzjU.png");
+    z-index: 90;
+  }
+  .content {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .text {
+    padding: 4rem 10rem 20rem 40rem;
+  }
+  .rock {
+    background-image: url("https://i.imgur.com/F4xnzjU.png");
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-position: left center;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .rocks {
+    position: absolute;
+    z-index: 1000;
+  }
+  .rock-1 {
+   width: 100px;
+   height: 100px;
+   left: 10%;
+   top: 50%;
+  }
+  .rock-2 {
+    width: 120px;
+    height: 120px;
+    left: 20%;
+    top: 30%;
+  }
+  .rock-3 {
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    bottom: 20%;
+  }
+  .rock-4 {
+    width: 130px;
+    height: 130px;
+    bottom: 0;
+    left: 31%;
+  }
+  .rock-5 {
+    width: 110px;
+    height: 110px;
+    bottom: 0;
+    left: 5%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .rock-6 {
+    width: 70px;
+    height: 70px;
+    bottom: 30%;
+    left: 20%;
+  }
+  .rock-7 {
+    width: 120px;
+    height: 120px;
+    bottom: 35%;
+    left: 15%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .rock-8 {
+    width: 50px;
+    height: 50px;
+    bottom: 25%;
+    left: 25%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .rock-9 {
+    width: 70px;
+    height: 70px;
+    bottom: 35%;
+    left: 30%;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      text-align: center;
+    }
+    .rocks, .rock {
+      display: none;
+    }
+    .text {
+      padding: 0 3rem 5rem 3rem;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.paratxt1{
+    height: 300px;
+    background-color:black;
+    font-size:36px;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10%;
+
+  }
+.parallax{
+  height: 100%;
+}
+
+   
+.parallax h1 {
+
+    
+    Create the parallax scrolling effect
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1{
+    color: #fff;
+    position: relative;
+    z-index: 101;
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  } */
